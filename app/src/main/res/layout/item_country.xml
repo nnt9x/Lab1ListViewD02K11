@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_item_country"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_item_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_country_capital"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img_item_country"
+        android:text="Việt Nam"/>
+
+    <TextView
+        android:id="@+id/tv_item_country_capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hà Nội"
+        app:layout_constraintBottom_toBottomOf="@id/img_item_country"
+        app:layout_constraintLeft_toRightOf="@+id/img_item_country"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_country_name"
+        android:layout_marginLeft="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
